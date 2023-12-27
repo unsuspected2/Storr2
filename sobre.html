@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/responsividades/Rindex.css">
+    <title>StoreFF/Sobre</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', cursive; /* Gaming font */
+            background: #1a1a1a; /* Dark background */
+            color: #ecf0f1; /* Light gray text color */
+        }
+
+        header,
+        footer {
+            height: 90px;
+            background: #2c3e50; /* Dark blue-gray */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px #000; /* Text shadow */
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 3px solid #3498db; /* Light blue */
+        }
+
+        footer {
+            border-top: 3px solid #3498db; /* Light blue */
+        }
+
+        .desenvolvimento {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .loading {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            border-top: 3px solid #e74c3c; /* Dark red */
+            animation: loading 1s linear infinite;
+        }
+
+        @keyframes loading {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #textoDesenvolvimento {
+            margin-top: 20px;
+            font-size: 22px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px #000; /* Text shadow */
+        }
+
+        /* Basic media query for smaller screens */
+        @media screen and (max-width: 600px) {
+            header,
+            footer {
+                height: 60px;
+                font-size: 14px;
+            }
+
+            .desenvolvimento {
+                margin-top: 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+
+    <div class="desenvolvimento">
+        <div class="loading"></div>
+        <p id="textoDesenvolvimento">Página em desenvolvimento!!</p>
+    </div>
+    
+    <footer></footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

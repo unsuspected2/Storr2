@@ -1,0 +1,57 @@
+/* ... (seus estilos anteriores) */
+
+.luvas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as divs horizontalmente */
+    align-items: center; /* Centraliza as divs verticalmente */
+    margin-top: 3%;
+}
+
+.cardLuvas {
+    height: 225px;
+    width: 215px;
+    background: rgb(215, 225, 226);
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardLuvas img {
+    margin-top: 2%;
+    max-width: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardLuvas a button {
+    width: 70%;
+    border-radius: 6px;
+    height: 30px;
+    color: rgb(215, 225, 226);
+    cursor: pointer;
+    outline: none;
+    background: rgb(65, 117, 119);
+    border: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px; /* Adiciona um espaço acima do botão */
+}
+
+.cardLuvas p {
+    color: rgb(69, 119, 121);
+    margin-left: 2%;
+    margin-right: 2%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.precosLuvas {
+    background: #2c3e50; /* Dark blue-gray */
+    height: 270px;
+}
+
+/* ... (seus estilos anteriores) */

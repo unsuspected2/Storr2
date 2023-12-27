@@ -1,0 +1,309 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #1a1a1a; /* Dark background */
+    font-family: 'Press Start 2P', cursive; /* Gaming font */
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+header {
+    height: 90px;
+    background: #2c3e50; /* Dark blue-gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #3498db; /* Light blue */
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.logoTopo {
+    flex: 50%;
+}
+
+.linksTopo {
+    flex: 50%;
+    text-align: right;
+}
+
+.logoTopo img {
+    max-width: 200px;
+}
+
+.linksTopo a {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ecf0f1; /* Light gray */
+    font-weight: bold;
+    margin: 2%;
+    text-shadow: 2px 2px 4px #000; /* Text shadow */
+}
+
+.linksTopo a button {
+    margin-left: 1%;
+    margin-right: 3%;
+    width: 130px;
+    color: #ecf0f1; /* Light gray */
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #ecf0f1; /* Light gray */
+    height: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000; /* Text shadow */
+}
+
+.linksTopo a:hover {
+    color: #3498db; /* Hover color */
+    text-shadow: 4px 4px 6px #000; /* Hover text shadow */
+}
+
+.linksTopo a button:hover {
+    background: #3498db; /* Hover color */
+    text-shadow: 4px 4px 6px #000; /* Hover text shadow */
+}
+
+#LinkNormal:hover::after {
+    content: ">";
+    color: #3498db; /* Hover color */
+    text-shadow: 2px 2px 4px #000; /* Hover text shadow */
+}
+
+#LinkNormal:hover::before {
+    content: "<";
+    color: #3498db; /* Hover color */
+    text-shadow: 2px 2px 4px #000; /* Hover text shadow */
+}
+
+section {
+    height: 400px;
+    margin-top: 3%;
+    display: flex;
+}
+
+.conteudoLateralSection {
+    flex: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.conteudoLateralSection p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #bdc3c7; /* Silver color */
+    text-shadow: 2px 2px 4px #000; /* Text shadow */
+}
+
+#achou {
+    letter-spacing: 2px;
+    color: #e74c3c; /* Red color */
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000; /* Text shadow */
+}
+
+h1 {
+    color: #3498db; /* Blue */
+    font-size: 45px;
+    text-shadow: 4px 4px 6px #000; /* Text shadow */
+}
+
+h1 {
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    background: linear-gradient(90deg, #1a1a1a, #ecf0f1);
+    width: 50%;
+    height: 4px;
+    position: absolute;
+    top: 100%; /* Posiciona a barra abaixo do h1 */
+    left: 0;
+    animation: storeff 3s linear infinite;
+}
+
+@keyframes storeff {
+    0%, 100% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+.botoesFbWpp {
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fb,
+#wpp {
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
+    color: rgb(215, 225, 226);
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 9px 10px 18px black;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin: 2%;
+}
+
+#fb:hover,
+#wpp:hover {
+    animation: none;
+}
+
+#fb:hover {
+    background: linear-gradient(to top right, rgb(22, 22, 173), rgb(5, 18, 59));
+}
+
+#wpp:hover {
+    background: linear-gradient(to top right, rgb(21, 121, 21), rgb(5, 63, 23));
+}
+
+.imgLateralSection {
+    flex: 50%;
+}
+
+.imgLateralSection img {
+    max-width: 100%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.nossosServices {
+    text-align: center;
+    background: #2c3e50; /* Dark blue-gray */
+    height: 700px;
+}
+
+h2 {
+    color: rgb(215, 225, 226);
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.cardService {
+    height: 225px;
+    width: 215px;
+    background: rgb(215, 225, 226);
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 3px 7px 18px rgb(155, 152, 152);
+}
+
+.cardService img {
+    max-width: 80px;
+}
+
+.ftsMaior img {
+    max-width: 50px;
+}
+
+#tituloCardService {
+    font-weight: bold;
+    color: black;
+}
+
+.cardService p {
+    color: rgb(69, 119, 121);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cardService a button {
+    width: 70%;
+    border-radius: 6px;
+    height: 30px;
+    color: rgb(215, 225, 226);
+    cursor: pointer;
+    outline: none;
+    background: rgb(65, 117, 119);
+    border: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.anuncios {
+    height: 120px;
+    background: #2c3e50; /* Dark blue-gray */
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.anuncios p {
+    color: rgb(128, 1, 1);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.anuncios img {
+    max-width: 40px;
+    cursor: pointer;
+}
+
+h3 {
+    color: rgb(215, 225, 226);
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+footer {
+    height: 300px;
+    background: #2c3e50; /* Dark blue-gray */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid rgb(0, 103, 151);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+footer p {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+#deixeEmail {
+    margin-left: 6%;
+    margin-right: 6%;
+    color: cadetblue;
+    font-size: 20px;
+}
+
+.formularioFooter {
+    height: 230px;
+    width: 50%;
+    text-align: center;
+    border-radius: 6px}
